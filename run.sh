@@ -1,3 +1,6 @@
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
 if [ -n "$WERCKER_NUGET_PACKAGES_CONFIGS" ]; then
   for FILENAME in $WERCKER_NUGET_PACKAGES_CONFIGS
   do
@@ -14,3 +17,4 @@ else
   done
 fi
 
+IFS=$SAVEIFS
