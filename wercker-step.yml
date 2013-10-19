@@ -1,0 +1,15 @@
+name: nuget
+version: 0.0.1
+description: Install NuGet packages
+keywords:
+  - nuget
+  - .net
+  - c#
+properties:
+  output-directory:
+    type: string
+    default: packages
+  packages-configs:
+    type: string
+
+
